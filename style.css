@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffc0cb;
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.topo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; /* texto à esquerda, botão à direita */
+  align-items: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.topo span {
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+}
+
+/* --- Botão de música no canto superior direito --- */
+#playMusica.botao-musica {
+  background: #ff66cc;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#playMusica.botao-musica:hover {
+  background: #cc33aa;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  position: relative;
+  width: 300px;
+}
+
+.gatinho {
+  width: 150px;
+  height: auto;
+}
+
+.titulo {
+  font-size: 24px;
+  margin: 15px 0 10px;
+}
+
+.subtexto {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Botões centralizados lado a lado */
+.botoes.fixos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  position: static;
+}
+
+/* Botões estilosos */
+.estilo-botao {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #ff66cc, #cc66ff);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.estilo-botao:hover {
+  transform: scale(1.05);
+}
+
+/* SIM botões padrão */
+#sim1, #sim2, #sim3 {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* NÃO botões */
+#nao1 {
+  position: static; /* Não foge */
+}
+
+#nao2 {
+  position: static; /* Também não foge */
+}
+
+#nao3 {
+  position: absolute; /* Vai fugir */
+  background-color: #f44336;
+  color: white;
+}
+
+.pagina {
+  display: none;
+}
+
+.pagina.ativa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloFinal {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+/* Esconde o player padrão do áudio */
+audio.musica {
+  display: none;
+}

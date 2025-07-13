@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Me Perdoa?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topo">
+    Desenvolvido por <span>AZ</span>
+    <button id="playMusica" class="botao-musica" title="Tocar música">▶️</button>
+  </div>
+
+  <div id="pagina1" class="pagina ativa">
+    <div class="container">
+      <img src="img/gatinho.gif" alt="Gatinho Chorando" class="gatinho" />
+      <h1 class="titulo">Me perdoa 😢</h1>
+      <p class="subtexto">Me desculpe por todas as vezes que eu deixei você brava e nervosa 💕💕</p>
+      <div class="botoes fixos">
+        <button id="sim1" class="estilo-botao">Sim 💖</button>
+        <button id="nao1" class="estilo-botao">Não 😢</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pagina2" class="pagina">
+    <div class="container">
+      <img src="img/gatinho1.gif" alt="Gatinho1" class="gatinho" />
+      <h1 class="titulo">Por favor me perdoa 🙏😢</h1>
+      <div class="botoes fixos">
+        <button id="sim2" class="estilo-botao">Sim 💘</button>
+        <button id="nao2" class="estilo-botao">Não 😖</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pagina3" class="pagina">
+    <div class="container">
+      <img src="img/gatinho2.gif" alt="Gatinho2" class="gatinho" />
+      <h1 class="titulo">Você terá que me perdoar mais cedo ou mais tarde 😠</h1>
+      <div class="botoes">
+        <button id="sim3" class="estilo-botao">Sim 🥰</button>
+        <button id="nao3" class="estilo-botao">Não 😐</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="paginaFinal" class="pagina">
+    <div class="container">
+      <img src="img/gatinho3.gif" alt="Gatinho3" class="gatinho" />
+      <h1 class="tituloFinal">
+        Sabia, meu amor, que você ia me perdoar. Te amo muito, Letícia💗!!!
+      </h1>
+    </div>
+  </div>
+
+  <!-- Áudio escondido para ser tocado com JS -->
+  <audio id="musicaFundo" loop>
+    <source src="musica.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
